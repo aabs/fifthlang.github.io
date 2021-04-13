@@ -1,3 +1,20 @@
 theme: jekyll-theme-tactile
-author: Andrew Matthews
-subtitle: blahdy blah
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      author: "Andrew Matthews"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
