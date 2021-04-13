@@ -20,7 +20,6 @@ string main(){
 }
 ```
 
-
 Fifth builds on top of the .NET 5 runtime, and should be portable to anywhere you can run a .NET runtime.
 Syntax design is still quite fluid, and most features are not present, but the language pipeline is mostly done. 
 

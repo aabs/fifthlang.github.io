@@ -1,4 +1,7 @@
-# Language Roadmap
+# The Roadmap
+
+Fifth is a very new language. Many of these features are not available yet.
+Please be patient, or better yet don't be - instead, roll up your sleeves and join in!
 
 - [ ] Basic Compiler
   - [ ] Fully functioning .NET language
