@@ -1,3 +1,6 @@
+---
+author: Andrew Matthews
+---
 # The Fifth Programming Language
 
 [Roadmap](/roadmap) **|** [Getting Started](/getting-started)
