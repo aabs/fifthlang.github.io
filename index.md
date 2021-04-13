@@ -27,11 +27,25 @@ Syntax design is still quite fluid, and most features are not present, but the l
 
 ## Fifth in a Nutshell
 
-- Functional, Object Oriented, Semantic paradigms supported
-- Runs on .NET VM
-- Compiled, not interpreted
-- Lexically Scoped
-- Strongly Typed
-- Multipass Compiler
-- Statement Based
-- Multi-paradigm language (functional, object-oriented, semantic, logic)
+Not all of the following list are in the language yet.  This is the aim of the language.
+
+- C Family syntax (expect curly braces)
+- Native support for Knowledge Management
+  - Supports W3C standards for RDF, SPARQL etc
+- Multi-paradigm language:
+  - Functional
+  - Object Oriented
+  - Semantic
+- Low syntactic noise Functional language
+  - tail call optimisation
+  - lists and list comprehensions
+  - pattern matching on function signatures
+- Runs on .NET VM:
+  - Compiled, not interpreted
+  - Portable to MacOS, Windows, Linux and more
+- Key Language features:
+  - Strongly Typed
+  - Type Inference
+  - Lexically Scoped
+  - Multipass Compiler written in C# 9/.NET 5
+  - Statement Based
