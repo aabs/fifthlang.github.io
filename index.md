@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# The Fifth Programming Language
 
-You can use the [editor on GitHub](https://github.com/aabs/fifthlang.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![Twitter Follow](https://img.shields.io/twitter/follow/aabs?style=social)
+[![.NET](https://github.com/aabs/fifthlang/actions/workflows/dotnet.yml/badge.svg)](https://github.com/aabs/fifthlang/actions/workflows/dotnet.yml)
+![Travis (.com)](https://img.shields.io/travis/com/aabs/fifthlang)
+![GitHub](https://img.shields.io/github/license/aabs/fifthlang)
+![GitHub forks](https://img.shields.io/github/forks/aabs/fifthlang?style=social)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/aabs?style=social)
+![GitHub language count](https://img.shields.io/github/languages/count/aabs/fifthlang)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/aabs/fifthlang)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Fifth is a small, general purpose language designed to make working with RDF knowledge graphs easier.  By making RDF graphs a first class part of the language, and by providing syntactic sugar that ought to be familiar to most programmers, I hope to:
 
-### Markdown
+- Drive RDF adoption
+- Make RDF development the fastest way to work with graph data
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Fifth builds on top of the .NET core runtime, and should be portable to anywhere you can run a .NET runtime.
 
-```markdown
-Syntax highlighted code block
+- [Download](#)
+- [Docs](#)
+  - [Language Specification](#)
 
-# Header 1
-## Header 2
-### Header 3
+## Fifth in a Nutshell
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aabs/fifthlang.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Runs on .NET VM
+- Lexically Scoped
+- Strongly Typed
+- Multipass Compiler
+- Statement Based
+- Multi-paradigm language (functional, object-oriented, semantic, logic)
