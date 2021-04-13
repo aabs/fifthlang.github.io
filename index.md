@@ -3,7 +3,7 @@ author: Andrew Matthews
 ---
 # The Fifth Programming Language
 
-[Roadmap](/roadmap) **|** [Getting Started](/getting-started)
+- [Roadmap](/roadmap) - [Getting Started](/getting-started)
 
 Fifth is a small, general purpose language designed to make working with RDF knowledge graphs easier.  
 By making RDF graphs a first class part of the language, and by providing syntactic sugar that 
