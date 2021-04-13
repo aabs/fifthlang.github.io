@@ -12,6 +12,15 @@ ought to be familiar to most programmers, I hope to:
 - Drive RDF adoption
 - Make RDF development the fastest way to work with graph data
 
+```csharp
+string main(){
+  string greeting = "hello world!";
+  print(greeting);
+  return greeting;
+}
+```
+
+
 Fifth builds on top of the .NET 5 runtime, and should be portable to anywhere you can run a .NET runtime.
 Syntax design is still quite fluid, and most features are not present, but the language pipeline is mostly done. 
 
