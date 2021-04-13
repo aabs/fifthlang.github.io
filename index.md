@@ -9,12 +9,15 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/aabs/fifthlang)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/aabs/fifthlang)
 
-Fifth is a small, general purpose language designed to make working with RDF knowledge graphs easier.  By making RDF graphs a first class part of the language, and by providing syntactic sugar that ought to be familiar to most programmers, I hope to:
+Fifth is a small, general purpose language designed to make working with RDF knowledge graphs easier.  
+By making RDF graphs a first class part of the language, and by providing syntactic sugar that 
+ought to be familiar to most programmers, I hope to:
 
 - Drive RDF adoption
 - Make RDF development the fastest way to work with graph data
 
-Fifth builds on top of the .NET core runtime, and should be portable to anywhere you can run a .NET runtime.
+Fifth builds on top of the .NET 5 runtime, and should be portable to anywhere you can run a .NET runtime.
+Syntax design is still quite fluid, and most features are not present, but the language pipeline is mostly done. 
 
 - [Download](#)
 - [Docs](#)
@@ -22,7 +25,9 @@ Fifth builds on top of the .NET core runtime, and should be portable to anywhere
 
 ## Fifth in a Nutshell
 
+- Functional, Object Oriented, Semantic paradigms supported
 - Runs on .NET VM
+- Compiled, not interpreted
 - Lexically Scoped
 - Strongly Typed
 - Multipass Compiler
