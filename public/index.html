@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#000" />
+    <title>The Fifth Programming Language &middot; Fifth Language </title>
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+        integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Bitter:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+
+    <!-- OpenGraph/Twitter Specific Stuff-->
+    <meta name="twitter:card" content="summary">
+    <meta property=”og:type” content=”blog”>
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://fifthlang.org/">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="The Fifth Programming Language">
+    
+
+    <!-- Any custom header goes here-->
+    
+
+    
+</head><body>
+        <div class="container"><div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable">
+    <a href="/" class="pure-menu-heading">
+        
+        Fifth Language
+        
+    </a>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+            <a href="/posts" class="pure-menu-link">
+                <i class="fa fa-archive"></i>
+                Articles
+            </a>
+        </li>
+        <li class="pure-menu-item">
+            <a href="/tags" class="pure-menu-link">
+                <i class="fas fa-comments"></i>
+                Categories
+            </a>
+        </li>
+        <li class="pure-menu-item">
+            <a href="/about" class="pure-menu-link">
+                <i class="fas fa-smile"></i>
+                About
+            </a>
+        </li>
+    </ul>
+    <ul class="pure-menu-list pull-right">
+
+        <!-- Any custom header goes here-->
+        <li class="pure-menu-item">
+            
+        </li>
+
+        
+        
+        
+        
+        
+        <li class="pure-menu-item">
+            <a href="/posts/index.xml" title="Atom Feed" class="pure-menu-link">
+                <i class="fas fa-rss-square"></i>
+                <span class="hide">RSS Feed</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="pure-u-1">
+    <div class="pad">
+    </div>
+</div><div class="pure-g">
+
+
+<div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-sm-1">
+    <div class="pad">
+<div class="date">
+    <time pubdate="2022-01-01">January 1, 2022</time>
+    <span class="author">by </span>
+</div>
+
+<article>
+    <h1><a href="http://fifthlang.org/">The Fifth Programming Language</a></h1><div class="tags">
+        
+    </div>
+    <p><a href="/pages/roadmap">Roadmap</a>  <a href="/pages/getting-started">Getting Started</a></p>
+<p>Fifth is a small, general purpose language designed to make working with RDF knowledge graphs easier.<br>
+By making RDF graphs a first class part of the language, and by providing syntactic sugar that
+ought to be familiar to most programmers, I hope to:</p>
+<ul>
+<li>Drive RDF adoption</li>
+<li>Make RDF development the fastest way to work with graph data</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">string</span> main(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">string</span> greeting = <span style="color:#e6db74">&#34;hello world!&#34;</span>;
+</span></span><span style="display:flex;"><span>  print(greeting);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> greeting;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Fifth builds on top of the .NET 5 runtime, and should be portable to anywhere you can run a .NET runtime.
+Syntax design is still quite fluid, and most features are not present, but the language pipeline is mostly done.</p>
+<ul>
+<li><a href="#">Download</a></li>
+<li><a href="#">Docs</a>
+<ul>
+<li><a href="#">Language Specification</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="fifth-in-a-nutshell">Fifth in a Nutshell</h2>
+<p>Not all of the following list are in the language yet.  This is the aim of the language.</p>
+<ul>
+<li>C Family syntax (expect curly braces)</li>
+<li>Native support for Knowledge Management
+<ul>
+<li>Supports W3C standards for RDF, SPARQL etc</li>
+</ul>
+</li>
+<li>Multi-paradigm language:
+<ul>
+<li>Functional</li>
+<li>Object Oriented</li>
+<li>Semantic</li>
+</ul>
+</li>
+<li>Low syntactic noise Functional language
+<ul>
+<li>tail call optimisation</li>
+<li>lists and list comprehensions</li>
+<li>pattern matching on function signatures</li>
+</ul>
+</li>
+<li>Runs on .NET VM:
+<ul>
+<li>Compiled, not interpreted</li>
+<li>Portable to MacOS, Windows, Linux and more</li>
+</ul>
+</li>
+<li>Key Language features:
+<ul>
+<li>Strongly Typed</li>
+<li>Type Inference</li>
+<li>Lexically Scoped</li>
+<li>Multipass Compiler written in C# 9/.NET 5</li>
+<li>Statement Based</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.buymeacoffee.com/fifthl"><img src="https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee" alt="buy me a coffee"></a>
+<img src="https://img.shields.io/twitter/follow/aabs?style=social" alt="Twitter Follow">
+<a href="https://github.com/aabs/fifthlang/actions/workflows/dotnet.yml"><img src="https://github.com/aabs/fifthlang/actions/workflows/dotnet.yml/badge.svg" alt=".NET"></a>
+<img src="https://img.shields.io/github/license/aabs/fifthlang" alt="GitHub">
+<img src="https://img.shields.io/github/sponsors/aabs?style=social" alt="GitHub Sponsors"></p>
+
+</article>
+    </div>
+</div>
+
+
+                
+<div id="sidebar" class="pure-u-1 pure-u-md-1-4 pure-u-sm-1">
+    <div class="pad">
+        <a name="about"></a>
+        <h3>About Me</h3>
+        <div style="text-align: center;">
+            <img src="" alt="" class="pure-img" />
+            <p><em></em></p>
+        </div>
+
+        <h3>Latest Articles</h3>
+        <div class="pure-menu pure-menu-open">
+            <ul class="pure-menu-list">
+                
+            </ul>
+        </div>
+
+        <h3>Categories</h3>
+        <div style="text-align:center" class="tags">
+            
+        </div>
+    </div> 
+</div> 
+
+                
+            </div><div class="pure-g">
+	<footer class="pure-u-1 pure-u-md-1 pure-u-sm-1">
+		<p>This page and its contents are copyright &copy; 2022,
+			<a href=""></a>.</p>
+		<p><a href="https://github.com/pravin/hugo-theme-prav">Theme Prav</a> by <a href="https://cto.me.uk">Pravin
+				Paratey</a></p>
+	</footer>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+		integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+		crossorigin="anonymous"></script>
+</div></div></body>
+</html>

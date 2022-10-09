@@ -1,4 +1,9 @@
-# Getting Started
+---
+title: Getting Started
+author: Andrew Matthews
+date: 2022-01-01
+draft: false
+--- 
 
 ## Building the grammar from Powershell
 
