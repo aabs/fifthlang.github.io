@@ -2,3 +2,9 @@
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 .vs/fifthlang.github.io/v16/.suo
+
+# Jekyll build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
