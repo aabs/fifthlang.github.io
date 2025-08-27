@@ -1,0 +1,60 @@
+/* Custom styles for Fifth Language website */
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Code block styling */
+pre {
+  background-color: #282c34;
+  color: #abb2bf;
+  overflow-x: auto;
+  border-radius: 6px;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Hero section styling */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Syntax highlighting improvements */
+.language-csharp .token.keyword {
+  color: #c678dd;
+}
+
+.language-csharp .token.string {
+  color: #98c379;
+}
+
+.language-csharp .token.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.language-bash .token.function {
+  color: #61dafb;
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto;
+}
