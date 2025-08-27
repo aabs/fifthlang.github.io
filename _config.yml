@@ -1,0 +1,21 @@
+title: The Fifth Programming Language
+email: your-email@domain.com
+description: Fifth is a small, general purpose language designed to make working with RDF knowledge graphs easier.
+baseurl: ""
+url: "https://fifthlang.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # The Fifth Programming Language
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/aabs?style=social)
