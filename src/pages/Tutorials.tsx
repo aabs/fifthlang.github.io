@@ -4,78 +4,11 @@ import { Link } from 'react-router-dom';
 import CodeBlock from '../components/CodeBlock';
 
 const Tutorials: React.FC = () => {
-  const helloWorldCode = `namespace HelloWorld {
-    import System;
-    
-    function main() {
-        Console.WriteLine("Hello, Fifth Language!");
-    }
-}`;
+  const helloWorldCode = `main(): int {\n    x: int = 10;\n    y: int = 15;\n    return x + y;\n}`;
 
-  const rdfBasicsCode = `namespace RDFBasics {
-    import System;
-    import RDF;
-    
-    function main() {
-        // Create a new graph
-        var graph = new Graph();
-        
-        // Define some URIs
-        var john = <http://example.org/john>;
-        var mary = <http://example.org/mary>;
-        var knows = <http://foaf.org/knows>;
-        var age = <http://example.org/age>;
-        
-        // Add triples to the graph
-        graph.add(john knows mary);
-        graph.add(john age 30);
-        graph.add(mary age 25);
-        
-        // Query the graph
-        var results = graph.query(?person knows ?friend);
-        
-        foreach (var result in results) {
-            Console.WriteLine($"{result.person} knows {result.friend}");
-        }
-    }
-}`;
+  const rdfBasicsCode = `main(): int {\n    arr: int[] = [1, 2, 3, 4, 5];\n    sum: int = 0;\n    i: int = 0;\n    while (i < 5) {\n        sum = sum + arr[i];\n        i = i + 1;\n    }\n    return sum;\n}`;
 
-  const advancedQueryCode = `namespace AdvancedQueries {
-    import System;
-    import RDF;
-    
-    function main() {
-        var graph = new Graph();
-        
-        // Load some sample data
-        loadSampleData(graph);
-        
-        // Complex query with multiple patterns and filters
-        var adultFriends = graph.query(
-            ?person <foaf:knows> ?friend,
-            ?friend <example:age> ?age,
-            ?friend <foaf:name> ?name
-            WHERE ?age >= 18
-            ORDER BY ?name
-        );
-        
-        Console.WriteLine("Adult friends:");
-        foreach (var result in adultFriends) {
-            Console.WriteLine($"  {result.name} (age {result.age})");
-        }
-    }
-    
-    function loadSampleData(graph: Graph) {
-        graph.add(
-            <john> <foaf:knows> <mary>,
-            <john> <foaf:knows> <bob>,
-            <mary> <example:age> 25,
-            <mary> <foaf:name> "Mary Smith",
-            <bob> <example:age> 17,
-            <bob> <foaf:name> "Bob Jones"
-        );
-    }
-}`;
+  const advancedQueryCode = `factorial(n: int): int {\n    if (n <= 1) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}\nmain(): int {\n    return factorial(5);\n}`;
 
   return (
     <Container className="py-5">
@@ -83,7 +16,8 @@ const Tutorials: React.FC = () => {
         <Col>
           <h1 className="mb-4">Tutorials</h1>
           <p className="lead">
-            Learn Fifth programming through hands-on examples and step-by-step guides.
+            Learn Fifth—a general-purpose language with native RDF support—through hands-on examples.
+            Along the way you'll use modern constructs like destructuring, function overloading, and guard clauses.
           </p>
         </Col>
       </Row>

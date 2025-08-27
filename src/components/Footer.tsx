@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <Col md={6}>
             <h5>Fifth Programming Language</h5>
             <p className="text-muted">
-              A modern language designed for working with RDF knowledge graphs.
+              A modern, general-purpose language with native RDF knowledge graph support.
             </p>
           </Col>
           <Col md={3}>

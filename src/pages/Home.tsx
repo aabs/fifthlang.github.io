@@ -4,29 +4,7 @@ import { Link } from 'react-router-dom';
 import CodeBlock from '../components/CodeBlock';
 
 const Home: React.FC = () => {
-  const sampleCode = `// Fifth example - Working with RDF triples
-namespace example {
-    import System;
-    import RDF;
-    
-    function main() {
-        // Create a knowledge graph
-        var graph = new Graph();
-        
-        // Add some triples
-        graph.add(<john> <knows> <mary>);
-        graph.add(<mary> <age> 25);
-        
-        // Query the graph
-        var results = graph.query(
-            ?person <knows> ?friend
-        );
-        
-        foreach (var result in results) {
-            Console.WriteLine($"{result.person} knows {result.friend}");
-        }
-    }
-}`;
+  const sampleCode = `main(): int {\n    x: int = 10;\n    y: int = 15;\n    return x + y;\n}`;
 
   return (
     <>
@@ -37,14 +15,16 @@ namespace example {
             <Col lg={6}>
               <h1 className="display-4 fw-bold mb-3">Fifth</h1>
               <p className="lead mb-4">
-                A modern programming language designed specifically for working with RDF knowledge graphs.
-                Built on .NET, strongly typed, and multi-paradigm.
+                A general-purpose programming language with native support for RDF knowledge graphs.
+                Built on .NET, strongly typed, multi-paradigm, and featuring modern constructs like
+                destructuring, function overloading, and guard clauses.
               </p>
               <div className="mb-4">
                 <Badge bg="light" text="dark" className="me-2">Runs on .NET</Badge>
                 <Badge bg="light" text="dark" className="me-2">Strongly Typed</Badge>
                 <Badge bg="light" text="dark" className="me-2">RDF Native</Badge>
-                <Badge bg="light" text="dark">Multi-Paradigm</Badge>
+                <Badge bg="light" text="dark" className="me-2">Multi-Paradigm</Badge>
+                <Badge bg="light" text="dark">Modern Constructs</Badge>
               </div>
               <div className="d-flex gap-3">
                 <Link to="/docs" className="btn btn-light btn-lg me-3">
@@ -71,7 +51,8 @@ namespace example {
             <Col>
               <h2 className="display-5 fw-bold">Why Choose Fifth?</h2>
               <p className="lead text-muted">
-                Fifth makes working with RDF knowledge graphs as easy as working with traditional data structures.
+                Fifth makes working with RDF knowledge graphs as easy as working with traditional data structures—
+                while remaining a productive, general-purpose language for everyday development.
               </p>
             </Col>
           </Row>
@@ -112,8 +93,8 @@ namespace example {
                   </div>
                   <h5>Multi-Paradigm</h5>
                   <p className="text-muted">
-                    Support for functional, object-oriented, semantic, and logic programming paradigms
-                    in a single, cohesive language.
+                    Functional, object-oriented, semantic, and logic programming—plus modern features like
+                    destructuring, function overloading, and guard clauses.
                   </p>
                 </Card.Body>
               </Card>
@@ -192,6 +173,10 @@ dotnet test" language="bash" />
                 <li className="list-group-item d-flex justify-content-between align-items-center">
                   Multi-paradigm
                   <Badge bg="danger" pill>Flexible</Badge>
+                </li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  Destructuring • Overloading • Guard Clauses
+                  <Badge bg="dark" pill>Modern</Badge>
                 </li>
               </ul>
             </Col>

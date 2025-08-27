@@ -10,8 +10,9 @@ const About: React.FC = () => {
           
           <div className="text-center mb-5">
             <p className="lead">
-              Fifth is a modern programming language designed specifically for working with 
-              RDF knowledge graphs and semantic web technologies.
+              Fifth is a modern, general-purpose programming language with native support for 
+              RDF knowledge graphs and semantic web technologies. It blends familiar syntax with 
+              powerful constructs like destructuring, function overloading, and guard clauses.
             </p>
           </div>
 
@@ -19,14 +20,16 @@ const About: React.FC = () => {
             <h2>Vision</h2>
             <p>
               The primary goal of Fifth is to make working with RDF knowledge graphs as natural 
-              and intuitive as working with traditional data structures. By providing first-class 
-              support for RDF concepts and familiar syntax for developers, Fifth aims to:
+              and intuitive as working with traditional data structures—without sacrificing the 
+              flexibility of a general-purpose language. By providing first-class support for RDF 
+              concepts and familiar syntax for developers, Fifth aims to:
             </p>
             <ul>
               <li><strong>Drive RDF adoption</strong> by lowering the barrier to entry</li>
               <li><strong>Make RDF development faster</strong> than traditional approaches</li>
               <li><strong>Provide type safety</strong> for semantic web applications</li>
               <li><strong>Bridge the gap</strong> between traditional programming and semantic technologies</li>
+              <li><strong>Remain general-purpose</strong> for building everyday applications</li>
             </ul>
           </section>
 
@@ -84,7 +87,22 @@ const About: React.FC = () => {
                     </h5>
                     <p>
                       Support for functional, object-oriented, semantic, and logic 
-                      programming paradigms in a single cohesive language.
+                      programming paradigms in a single cohesive language, plus modern 
+                      conveniences like destructuring, function overloading, and guard clauses.
+                    </p>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={6}>
+                <Card className="mb-3 border-dark">
+                  <Card.Body>
+                    <h5 className="text-dark">
+                      <i className="bi bi-stars me-2"></i>
+                      Modern Constructs
+                    </h5>
+                    <p>
+                      Write expressive, concise code with tuple/object destructuring, 
+                      function/method overloading, and lightweight guard clauses for clear control flow.
                     </p>
                   </Card.Body>
                 </Card>

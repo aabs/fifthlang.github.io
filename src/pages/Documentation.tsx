@@ -3,47 +3,7 @@ import { Container, Row, Col, Card, ListGroup, Alert } from 'react-bootstrap';
 import CodeBlock from '../components/CodeBlock';
 
 const Documentation: React.FC = () => {
-  const syntaxExample = `// Fifth Language Syntax Examples
-
-// Variable declarations
-var name: string = "John";
-var age: int = 30;
-var isActive: bool = true;
-
-// Function definition
-function greet(name: string): string {
-    return "Hello, " + name + "!";
-}
-
-// RDF Triple creation
-var person = <http://example.org/person/john>;
-var knows = <http://example.org/knows>;
-var friend = <http://example.org/person/mary>;
-
-// Add triple to graph
-graph.add(person knows friend);
-
-// SPARQL-like queries
-var results = graph.query(
-    ?person <http://example.org/knows> ?friend,
-    ?person <http://example.org/age> ?age
-    WHERE ?age > 25
-);
-
-// Classes and objects
-class Person {
-    var name: string;
-    var age: int;
-    
-    constructor(name: string, age: int) {
-        this.name = name;
-        this.age = age;
-    }
-    
-    function introduce(): string {
-        return "I am " + this.name + ", " + this.age + " years old.";
-    }
-}`;
+  const syntaxExample = `main(): int {\n    x: int = 10;\n    y: int = 15;\n    return x + y;\n}\n\nadd(a: int, b: int): int {\n    return a + b;\n}\nmain(): int {\n    return add(10, 15);\n}\n\nclass Person {\n    Name: string;\n    Age: int;\n}\nget_age(p: Person): int {\n    return p.Age;\n}\nmain(): int {\n    person: Person = new Person {\n        Name = "John",\n        Age = 25\n    };\n    return get_age(person);\n}`;
 
   const installExample = `# Prerequisites
 # .NET SDK 8.0 or later
@@ -58,6 +18,8 @@ dotnet build fifthlang.sln
 
 # Run tests to verify installation
 dotnet test fifthlang.sln`;
+
+  const modernExample = `foo(i: int | i <= 15): int {\n    return 1;\n}\nfoo(i: int | i > 15): int {\n    return 2;\n}\nmain(): int {\n    return foo(10) + foo(20);\n}\n\nclass Employee {\n    Name: string;\n    Salary: int;\n    Department: string;\n}\ncalculate_bonus(emp: Employee {\n    salary: Salary | salary > 50000,\n    department: Department\n}): int {\n    if (department == "Engineering") {\n        return salary / 10;\n    }\n    return salary / 20;\n}\nmain(): int {\n    engineer: Employee = new Employee {\n        Name = "Alice",\n        Salary = 60000,\n        Department = "Engineering"\n    };\n    return calculate_bonus(engineer);\n}`;
 
   return (
     <Container className="py-5">
@@ -74,8 +36,10 @@ dotnet test fifthlang.sln`;
           <section id="getting-started" className="mb-5">
             <h2>Getting Started</h2>
             <p>
-              Fifth is a programming language designed to make working with RDF knowledge graphs easier.
-              It builds on top of the .NET Core runtime and provides first-class support for semantic web technologies.
+              Fifth is a general-purpose programming language that makes working with RDF knowledge graphs easier,
+              without compromising everyday development. It runs on the .NET runtime and provides first-class support
+              for semantic web technologies alongside modern language features like destructuring, function overloading,
+              and guard clauses.
             </p>
             
             <h3>Installation</h3>
@@ -115,6 +79,20 @@ dotnet test fifthlang.sln`;
                   </Card.Body>
                 </Card>
               </Col>
+              <Col md={12}>
+                <Card className="mb-3">
+                  <Card.Header>
+                    <h5>Modern Constructs</h5>
+                  </Card.Header>
+                  <Card.Body>
+                    <ul>
+                      <li>Tuple and object destructuring for concise data access</li>
+                      <li>Function/method overloading for expressive APIs</li>
+                      <li>Lightweight guard clauses for clear, early-exit control flow</li>
+                    </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
             </Row>
           </section>
 
@@ -125,6 +103,14 @@ dotnet test fifthlang.sln`;
               while providing specialized constructs for RDF operations.
             </p>
             <CodeBlock code={syntaxExample} language="csharp" />
+          </section>
+
+          <section id="modern-constructs" className="mb-5">
+            <h2>Modern Constructs</h2>
+            <p>
+              Beyond RDF-first features, Fifth includes productivity-focused capabilities that make everyday code simpler and clearer.
+            </p>
+            <CodeBlock code={modernExample} language="csharp" />
           </section>
 
           <section id="compiler" className="mb-5">
@@ -191,6 +177,9 @@ var adults = graph.query(
               </ListGroup.Item>
               <ListGroup.Item action href="#syntax">
                 Syntax Overview
+              </ListGroup.Item>
+              <ListGroup.Item action href="#modern-constructs">
+                Modern Constructs
               </ListGroup.Item>
               <ListGroup.Item action href="#compiler">
                 Compiler Architecture
