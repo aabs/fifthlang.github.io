@@ -8,7 +8,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/fifthlang.github.io">
+    <BrowserRouter basename="/fifthlang">
       <App />
     </BrowserRouter>
   </StrictMode>,
